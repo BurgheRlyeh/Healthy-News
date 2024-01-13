@@ -1,5 +1,5 @@
 {
-  "lang":"ru",
+  "lang":"en",
   "name":"pipeline",
   "version":"0.0.0",
   "spacy_version":">=3.7.2,<3.8.0",
@@ -32,27 +32,28 @@
 
   ],
   "performance":{
-    "cats_score":0.9320377215,
+    "cats_score":0.7247063031,
     "cats_score_desc":"macro F",
-    "cats_micro_p":0.932066033,
-    "cats_micro_r":0.932066033,
-    "cats_micro_f":0.932066033,
-    "cats_macro_p":0.9322827269,
-    "cats_macro_r":0.9319543074,
-    "cats_macro_f":0.9320377215,
-    "cats_macro_auc":0.9802681719,
+    "cats_micro_p":0.72624,
+    "cats_micro_r":0.72624,
+    "cats_micro_f":0.72624,
+    "cats_macro_p":0.7310483191,
+    "cats_macro_r":0.7260650461,
+    "cats_macro_f":0.7247063031,
+    "cats_macro_auc":0.7974061595,
     "cats_f_per_type":{
       "positive":{
-        "p":0.9395751701,
-        "r":0.9218939701,
-        "f":0.9306505975
+        "p":0.698311942,
+        "r":0.79896249,
+        "f":0.7452542247
       },
       "negative":{
-        "p":0.9249902837,
-        "r":0.9420146448,
-        "f":0.9334248456
+        "p":0.7637846962,
+        "r":0.6531676022,
+        "f":0.7041583816
       }
     },
-    "textcat_loss":8.7146914004
+    "cats_macro_auc_per_type":0.0,
+    "textcat_loss":42.4670971138
   }
 }

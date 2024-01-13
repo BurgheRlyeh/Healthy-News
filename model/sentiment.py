@@ -1,14 +1,14 @@
 import spacy
 from tqdm.auto import tqdm
 from spacy.tokens import DocBin
-import ru_core_news_md
+import en_core_web_sm
 import re
 import numpy as np
 import pandas as pd
 import random
-nlp = spacy.load('ru_core_news_md')
+nlp = spacy.load('en_core_web_sm')
 
-df = pd.read_csv('dataset.csv', delimiter = '\t')
+df = pd.read_csv('IMDB Dataset.csv', delimiter = '\t')
 df = df[df['sentiment']!='neautral']
 df['review'] = df['review'].apply(lambda x: re.sub(r'[^\w\s]', '', x))
 df['review'] = df['review'].str.lower()
@@ -32,8 +32,8 @@ random.shuffle(data)
 
 print(len(data))
 print("Example: ", data[0])
-train = data[:50000]
-valid = data[50000:]
+train = data[:20000]
+valid = data[20000:]
 print(f"Train size: {len(train)} Valid size: {len(valid)}")
 
 # transform all the training data in spacy documents
