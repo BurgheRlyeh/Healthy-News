@@ -12,8 +12,8 @@ import fasttext as ft
 import numpy as np
 
 MAX_LEN = 128  
-TRAIN_BATCH_SIZE = 128 
-VALID_BATCH_SIZE = 128 
+TRAIN_BATCH_SIZE = 64 
+VALID_BATCH_SIZE = 64 
 EPOCHS = 1  
 EMBED_DIM = 300 
 
