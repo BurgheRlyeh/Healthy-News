@@ -25,11 +25,12 @@
 
 Простая модель, реализованная с помощью NLP библиотеки spaCy. Бинарно классифицирует предложения. Использует [IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) с отзывами на фильмы.
 
-Accuracy ~ 0.71
+Accuracy (Ali) ~ 0.65
+Accuracy (IMDB) ~ 0.71
 
 ### Именные сущности
 
-Модель, обучаемая вручную, использующая алгоритмы LSTM (Long short-term memory) и оптимизатор Адам для градиентного спуска. В качестве датасетов для модели выступают ['cc.en.300.bin'](https://fasttext.cc/docs/en/crawl-vectors.html) - отображение английских слов в вектора, а также [ner_dataset](https://www.kaggle.com/datasets/abhinavwalia95/entity-annotated-corpus/data) с именованными сущностями, также на английском языке.
+Модель, обучаемая вручную, использующая алгоритмы LSTM (Long short-term memory) и оптимизатор Адам для градиентного спуска, а также используются библиотеки PyTorch и fastText. В качестве датасетов для модели выступают ['cc.en.300.bin'](https://fasttext.cc/docs/en/crawl-vectors.html) - отображение английских слов в вектора, и [ner_dataset](https://www.kaggle.com/datasets/abhinavwalia95/entity-annotated-corpus/data) с именованными сущностями, также на английском языке.
 
 Accuracy ~ 0.85
 
